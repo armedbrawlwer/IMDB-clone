@@ -3,6 +3,7 @@ import Link from 'next/link'
 import MenuItem from '@/app/components/MenuItem'
 import { AiFillHome } from 'react-icons/ai'
 import { BsInfoCircleFill } from 'react-icons/bs'
+import DarkModeSwitch from '@/app/components/DarkModeSwitch'
 function Header() {
     return (
         <div className='flex justify-between  p-3 items-center max-w-6xl mx-auto '>
@@ -11,10 +12,14 @@ function Header() {
                 <MenuItem title='about' address='/about' Icon={BsInfoCircleFill} />
 
             </div>
+            <div className='flex gap-2 items-center'>
+                <DarkModeSwitch/>
             <Link className='flex gap-1 items-center' href={'/'}>
                 <span className='text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg'>IMDB</span>
                 <span className='text-xl hidden sm:inline'>clone</span>
             </Link>
+            </div>
+            
         </div>
     )
 }
