@@ -10,7 +10,6 @@ function Header() {
             <div className='flex gap-4'>
                 <MenuItem title='home' address='/' Icon={AiFillHome} />
                 <MenuItem title='about' address='/about' Icon={BsInfoCircleFill} />
-
             </div>
             <div className='flex gap-2 items-center'>
                 <DarkModeSwitch/>
