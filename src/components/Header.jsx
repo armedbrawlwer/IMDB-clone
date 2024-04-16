@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import MenuItem from '@/app/components/MenuItem'
+import MenuItem from './MenuItem'
 import { AiFillHome } from 'react-icons/ai'
 import { BsInfoCircleFill } from 'react-icons/bs'
-import DarkModeSwitch from '@/app/components/DarkModeSwitch'
+import DarkModeSwitch from './DarkModeSwitch'
 function Header() {
     return (
         <div className='flex justify-between  p-3 items-center max-w-6xl mx-auto '>
